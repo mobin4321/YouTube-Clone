@@ -1,0 +1,182 @@
+.header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 1px solid rgb(229, 229, 229);
+  z-index: 100;
+}
+.left {
+  display: flex;
+  align-items: center;
+  /* background-color: lightblue; */
+}
+.hamburger {
+  height: 24px;
+  margin: 0px 24px;
+  cursor: pointer;
+}
+.ytlogo {
+  height: 20px;
+  cursor: pointer;
+}
+.middle {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  /* background-color: lightpink; */
+}
+.searchbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 40px;
+  width: 66px;
+  background-color: rgba(240, 240, 240, 0.6);
+  border: 1px solid rgb(193, 193, 193);
+  margin-left: -1px;
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+}
+.searchbtn:hover {
+  background-color: rgb(240, 240, 240);
+}
+.searchbtn .tooltip,
+.voicebtn .tooltip {
+  position: absolute;
+  font-size: 12px;
+  color: white;
+  background-color: rgba(53, 53, 53, 0.7);
+  padding: 10px 8px;
+  bottom: -42px;
+  border-radius: 2.5px;
+  transition: opacity 0.1s;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.searchbtn:hover .tooltip,
+.voicebtn:hover .tooltip {
+  opacity: 1;
+}
+.voicebtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  height: 42px;
+  width: 42px;
+  background-color: rgb(247, 246, 246);
+  border-radius: 20px;
+  border: transparent;
+  cursor: pointer;
+}
+.voicebtn .tooltip {
+  bottom: -40px;
+}
+.searchbar {
+  flex: 1;
+  height: 38px;
+  border-radius: 2px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(193, 193, 193);
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.06);
+  width: 0;
+}
+.searchbar::placeholder {
+  font-family: Roboto, arial;
+}
+.searchbar:active {
+  border: 1px solid blue;
+}
+.searchicon {
+  margin-top: 3px;
+  width: 24px;
+}
+.voiceicon {
+  margin-top: 2px;
+  width: 23px;
+}
+.right {
+  /* background-color: lightblue; */
+  width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-shrink: 0;
+}
+.upload,
+.ytapps,
+.notifications {
+  width: 24px;
+  cursor: pointer;
+}
+.uploaddiv,
+.ytappsdiv,
+.notdiv {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.uploaddiv .tooltip,
+.ytappsdiv .tooltip,
+.notdiv .tooltip {
+  position: absolute;
+  font-size: 12px;
+  color: white;
+  background-color: rgba(53, 53, 53, 0.7);
+  padding: 10px 8px;
+  bottom: -49px;
+  border-radius: 2.5px;
+  transition: opacity 0.1s;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.uploaddiv:hover .tooltip,
+.ytappsdiv:hover .tooltip,
+.notdiv:hover .tooltip {
+  opacity: 1;
+}
+
+.ytpfp {
+  width: 34px;
+  height: 34px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.notbox {
+  position: relative;
+  cursor: pointer;
+}
+.notcount {
+  position: absolute;
+  right: -8.53px;
+  top: -5px;
+  background-color: rgb(219, 2, 2);
+  color: white;
+  border: 2px solid white;
+  padding: 1.6px 5.3px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-family: Roboto, arial;
+}
