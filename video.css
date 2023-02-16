@@ -19,6 +19,7 @@
 .preview {
   vertical-align: top;
   position: relative;
+  /* min-width: 180px; */
 }
 .profile-picture:hover + .authordetailscontainer {
   opacity: 1;
@@ -90,9 +91,10 @@
 }
 
 .video-grid {
+  border: 2px solid red;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 40px;
+  row-gap: 25px;
   column-gap: 16px;
   padding: 20px;
 }
@@ -100,6 +102,9 @@
 @media (max-width: 750px) {
   .video-grid {
     grid-template-columns: 1fr 1fr;
+  }
+  .authordetailscontainer {
+    display: none;
   }
 }
 
